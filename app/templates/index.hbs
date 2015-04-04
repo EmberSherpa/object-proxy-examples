@@ -1,0 +1,23 @@
+<div class="summary-panel">
+    <h3>Selected</h3>
+    <ul>
+      {{#each selected as |item|}}
+        <li>{{item.name}}</li>
+      {{/each}}
+    </ul>
+    <hr>
+    <div>Total: {{proxiedSelected.length}}</div>
+</div>
+<div class="options-panel">
+    <h3>List</h3>
+    <ul class="options-list">
+      {{#each proxiedModels as |item|}}
+          <li class="list-item">
+              <label>
+                {{input type="checkbox" checked=item.isActive}}
+                {{item.name}}
+              </label>
+          </li>
+      {{/each}}
+    </ul>
+</div>

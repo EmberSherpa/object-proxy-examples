@@ -1,0 +1,18 @@
+.options-panel {
+  float: left;
+}
+.options-list {
+  width: 200px;
+  height: 400px;
+  overflow: scroll;
+  padding-left: 5px;
+}
+
+.summary-panel {
+  float: left;
+  width: 200px;
+}
+
+.list-item {
+  list-style: none;
+}
