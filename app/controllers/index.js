@@ -24,7 +24,5 @@ export default Ember.Controller.extend({
   /**
    * Computed Property that evaluates to an array of selected objects (not proxies)
    */
-  selected: Ember.computed.map('proxiedSelected', function(proxied){
-    return proxied.content;
-  })
+  selected: Ember.computed.mapBy('proxiedSelected', 'content'),
 });
